@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+
+    <style>
+      .box {
+        background-color: brown;
+        width: 100px;
+        height: 100px;
+        /* transition: width 5s, height 3s; */
+        /* transition-delay: 3s; */
+        transition: transform 3s, width 3s, height 3s;
+      }
+
+      .box:hover {
+        /* width: 100%;
+        height: 500px; */
+        width: 200px;
+        height: 200px;
+        transform: rotate(180deg);
+      }
+
+      .container1 {
+        background-color: blueviolet;
+        width: 200px;
+        height: 200px;
+        padding: 20px;
+        border: 5px solid black;
+        margin: 20px;
+        /* outline-style: dotted;
+        outline-color: brown;
+        outline-width: 5px; */
+        outline: 3px double brown;
+        outline-offset: 5px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="box"></div>
+
+    <div class="container1"></div>
+  </body>
+</html>
