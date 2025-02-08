@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+
+    <style>
+      .box1 {
+        background-color: brown;
+        width: 100px;
+        height: 100px;
+      }
+
+      .box1:hover {
+        background-color: yellow;
+      }
+
+      .box2 {
+        /* background-color: skyblue; */
+        width: 100px;
+        height: 100px;
+        animation-name: demo;
+        animation-duration: 3s;
+        animation-iteration-count: 5;
+      }
+
+      @keyframes demo {
+        from {
+          background-color: black;
+          box-shadow: 5px 5px 10px yellow;
+        }
+
+        to {
+          background-color: blue;
+          box-shadow: 5px 6px 8px green;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="box1"></div>
+    <div class="box2"></div>
+  </body>
+</html>
