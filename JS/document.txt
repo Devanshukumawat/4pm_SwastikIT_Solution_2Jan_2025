@@ -1,0 +1,36 @@
+¬Introduction to JavaScript (JS):
+JavaScript is a high-level, interpreted programming language primarily used for creating dynamic and interactive content on webpages. It was originally created to make web pages more dynamic and interactive. JS allows developers to add features like interactivity, animations, and user input validation to web pages.
+Js Single-threaded programming language. It means that only one command is performed at a time. The JavaScript engine runs each line of code 
+JavaScript can only do one operation...
+
+
+
+What is JavaScript?
+JavaScript is a lightweight, interpreted programming language that allows you to implement complex features on web pages. It enhances the interactivity of web pages by allowing you to manipulate HTML and CSS, handle events, perform calculations, and communicate with servers.
+
+
+
+How JavaScript Works?
+JavaScript code is typically embedded directly into HTML documents and executed by web browsers. When a web page containing JavaScript is loaded, the browser's JavaScript engine interprets and executes the code, allowing the page to respond to user actions and events.
+
+
+
+Latest Version of JavaScript:
+The latest version of JavaScript is ECMAScript 2021 (ES12), which introduces new features and enhancements to the language. JavaScript engines in modern web browsers continually update to support the latest version of ECMAScript.
+
+
+
+About V8 Engine:
+The V8 engine is an open-source JavaScript engine developed by Google for the Chrome web browser. It is also used in Node.js. V8 compiles JavaScript code directly into native machine code for efficient execution, using techniques like just-in-time (JIT) compilation.
+
+
+	
+Why Node.js is Required?
+Node.js is a server-side runtime environment that allows you to run JavaScript code on the server. It is required for building scalable, high-performance web applications and server-side APIs. Node.js enables developers to use JavaScript for both client-side and server-side development, making it possible to share code between the front-end and back-end.
+
+
+
+Single Thread in JavaScript:
+JavaScript is single-threaded, meaning it can only execute one task at a time in the same process. However, asynchronous programming techniques like callbacks, promises, and async/await allow JavaScript to handle multiple tasks concurrently without blocking the execution of other code.
+
+
