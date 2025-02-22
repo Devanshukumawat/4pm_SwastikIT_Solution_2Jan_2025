@@ -124,6 +124,26 @@ Greater Than or Equal To (>=): Returns true if the first operand is greater than
 Less Than (<): Returns true if the first operand is less than the second.
 Less Than or Equal To (<=): Returns true if the first operand is less than or equal to the second.
 
+Functions in js:
+Definition:
+A function in JavaScript is a block of code designed to perform a particular task. It is executed when "called" or "invoked".
+Functions can take parameters (inputs) and return a value (output).
+Function Declaration:
+Function Expression:
+Arrow Functions (ES6):
+Parameters and Arguments:
+Return Statement:
+Function Scope:
+Function Hoisting:
+
+
+
+If else in js:
+The if...else statement is a control flow statement that executes a block of code if a specified condition is true, and another block of code if the condition is false.
+It provides the ability to perform different actions based on different conditions. 
+You want to perform different actions for different decisions.
+
+
 
 
 
