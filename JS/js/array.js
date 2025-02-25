@@ -103,3 +103,108 @@ unshift() start index - value add
 // delete myArray1[2];
 
 // console.log(myArray1);
+
+// const myArray = ["Manny", "Kizie", 67, 56, true];
+
+//for forEach map
+
+// for
+// for(start ; condition ; increment/decrement){
+//     statement
+// }
+
+// for (let x = 1; x <= 5; x++) {
+//   console.log(x);
+// }
+
+// const myArray = ["Manny", "Kizie", 67, 56, true];
+
+// for (let x = 1; x <= 10; x++) {
+//   console.log(x);
+// }
+
+// const myArray = ["Manny", "Kizie", 67, 56, true, "Aman"];
+// //index           0          1      2   3    4     5
+
+// console.log(myArray[1]);
+
+// for (let x = 0; x < myArray.length; x++) {
+//   let values = myArray[x];
+//   console.log(values);
+// }
+
+() => {};
+
+// const myNewArray = ["Dev", "Text", 6, 8, false];
+
+// myNewArray.forEach((value, index) => {
+//   console.log(value + " index :-  " + index);
+// });
+
+// function add(value, index) {
+//   console.log(value);
+// }
+
+// myNewArray.forEach(add);
+
+// const myNewArray = ["Dev", "Text", 6, 8, false];
+
+// const returnValue = myNewArray.forEach((value, index) => {
+//   return value;
+// });
+
+//const returnValue;
+
+// console.log(returnValue);
+
+// const returnValue = myNewArray.map((value, index) => {
+//   return value;
+// });
+
+// console.log(returnValue);
+
+// const myArray = [5, 77, 6, 2, 3, 44, 54, 32, 12];
+
+// const filterValue = myArray.filter((value, index) => {
+//   return value < 50;
+// });
+
+// console.log(filterValue);
+
+// const myArray = [1, 2, 3, 4, 5];
+
+// const TotalValue = myArray.reduce((acc, value, index) => {
+//   return acc + value;
+// });
+
+/*
+
+acc = 5 value = 1    6
+acc = 6 value = 2    8
+acc = 8 value = 3    11
+acc = 11 value 4     15
+acc = 15 value = 5   20
+acc = 20 value = ?
+
+acc = 1 value = 2    3
+acc = 3 value = 3    6
+acc = 6 value = 4    10
+acc = 10 value = 5   15
+acc = 15 value
+
+*/
+
+// console.log(TotalValue);
+
+const myNewArray = [2, 3, 4, 6, 2, 3];
+const TotalValue = myNewArray.reduce((acc, value, index) => {
+  return acc * value;
+}, 3);
+
+console.log(TotalValue);
+
+// tables
+// userInput = 2;
+
+//144
+//2592
