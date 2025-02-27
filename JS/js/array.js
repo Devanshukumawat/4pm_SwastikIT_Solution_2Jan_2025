@@ -1,3 +1,5 @@
+const prompt = require("prompt-sync")();
+
 //Array
 
 // let myArray = ["String", "Aman", "Manny", 67, 98, "Kizie", true];
@@ -133,7 +135,7 @@ unshift() start index - value add
 //   console.log(values);
 // }
 
-() => {};
+// () => {};
 
 // const myNewArray = ["Dev", "Text", 6, 8, false];
 
@@ -196,15 +198,22 @@ acc = 15 value
 
 // console.log(TotalValue);
 
-const myNewArray = [2, 3, 4, 6, 2, 3];
-const TotalValue = myNewArray.reduce((acc, value, index) => {
-  return acc * value;
-}, 3);
+// const myNewArray = [2, 3, 4, 6, 2, 3];
+// const TotalValue = myNewArray.reduce((acc, value, index) => {
+//   return acc * value;
+// }, 3);
 
-console.log(TotalValue);
+// console.log(TotalValue);
 
 // tables
 // userInput = 2;
 
 //144
 //2592
+
+// let num = prompt("Enter Number :- ");
+
+// for (let x = 1; x <= 10; x++) {
+//   let table = num * x;
+//   console.log(table);
+// }
