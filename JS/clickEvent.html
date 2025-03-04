@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+
+    <style>
+      h1 {
+        color: green;
+      }
+      button {
+        background-color: brown;
+        color: white;
+        border: none;
+        padding: 5px 10px 5px 10px;
+        cursor: pointer;
+      }
+    </style>
+  </head>
+  <body>
+    <h1 id="color">Hello Good Evening</h1>
+
+    <button onclick="changeColor()" id="btn">Tap</button>
+
+    <p>
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis, fuga.
+      Ratione laborum odit delectus facilis tempore facere non provident nisi!
+    </p>
+
+    <script>
+      function changeColor() {
+        document.getElementById("color").style.color = "blue";
+        let b = (document.getElementById("btn").style.display = "none");
+        console.log(b);
+      }
+    </script>
+  </body>
+</html>

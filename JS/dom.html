@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h1 id="heading1"></h1>
+
+    <h2 class="c1">Hello class</h2>
+    <h3 class="c1">Hello Good evening</h3>
+
+    <p>Lorem ipsum dolor sit amet.</p>
+
+    <p>
+      Lorem ipsum dolor sit, amet consectetur adipisicing elit. Distinctio,
+      suscipit?
+    </p>
+
+    <script>
+      //   console.log(document);
+      // id / class / tagname    = html tag (object)
+
+      // id
+
+      let a = (document.getElementById("heading1").innerText =
+        "Hello class 🙋‍♂️");
+
+      //class
+
+      let b = (document.getElementsByClassName("c1")[0].innerText = "🫤");
+
+      // tagname
+
+      let c = (document.getElementsByTagName("p")[1].innerText =
+        "Devanshu sir");
+    </script>
+  </body>
+</html>

@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <button onclick="darkMode()" id="btn">Dark Mode</button>
+
+    <h1>Good Evening 😍</h1>
+    <p>
+      Lorem ipsum dolor, sit amet consectetur adipisicing elit. Totam fugit
+      magni velit mollitia numquam a, sint delectus nisi dolorem eos ea vel
+      harum minus deserunt quas veniam non, possimus autem.
+    </p>
+
+    <script>
+      function darkMode() {
+        let colorBg =
+          document.getElementsByTagName("body")[0].style.backgroundColor;
+
+        console.log(colorBg);
+
+        if (colorBg == "") {
+          document.getElementsByTagName("body")[0].style.backgroundColor =
+            "black";
+          document.getElementsByTagName("body")[0].style.color = "white";
+          document.getElementById("btn").innerText = "Light Mode";
+        } else if (colorBg == "black") {
+          document.getElementsByTagName("body")[0].style.backgroundColor =
+            "white";
+          document.getElementsByTagName("body")[0].style.color = "black";
+          document.getElementById("btn").innerText = "Dark Mode";
+        } else if (colorBg == "white") {
+          document.getElementsByTagName("body")[0].style.backgroundColor =
+            "black";
+          document.getElementsByTagName("body")[0].style.color = "white";
+          document.getElementById("btn").innerText = "Light Mode";
+        }
+      }
+    </script>
+  </body>
+</html>

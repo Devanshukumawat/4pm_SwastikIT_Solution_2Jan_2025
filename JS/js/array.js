@@ -149,21 +149,19 @@ unshift() start index - value add
 
 // myNewArray.forEach(add);
 
-// const myNewArray = ["Dev", "Text", 6, 8, false];
+const myNewArray = ["Dev", "Text", 6, 8, false];
 
-// const returnValue = myNewArray.forEach((value, index) => {
-//   return value;
-// });
+const returnNewValue = myNewArray.forEach((value, index) => {
+  return value;
+});
 
-//const returnValue;
+console.log(returnValue);
 
-// console.log(returnValue);
+const returnValue = myNewArray.map((value, index) => {
+  return value;
+});
 
-// const returnValue = myNewArray.map((value, index) => {
-//   return value;
-// });
-
-// console.log(returnValue);
+console.log(returnValue);
 
 // const myArray = [5, 77, 6, 2, 3, 44, 54, 32, 12];
 

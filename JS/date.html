@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      h1 {
+        color: wheat;
+        text-align: center;
+        background-color: black;
+      }
+    </style>
+  </head>
+  <body>
+    <h1 id="time"></h1>
+    <h1 id="time2"></h1>
+
+    <script>
+      //  console.log(todayDate);
+      // Date = dd/mm/yy - Time = h:m:s
+      //   const months = [
+      //     "Jan",
+      //     "Feb",
+      //     "March",
+      //     "April",
+      //     "May",
+      //     "June",
+      //     "July",
+      //     "Aug",
+      //     "Sep",
+      //     "Oct",
+      //     "Nov",
+      //     "Dec",
+      //   ];
+      //   let todayMonthName = months[todayMM];
+      //   const days = ["Sun", "Mon", "Tue", "Wed", "Thu", "Fri", "Sat"];
+      //   const todayDay = todayDate.getDay();
+
+      function Time() {
+        const todayDate = new Date();
+        const todayDD = todayDate.getDate();
+        const todayMM = todayDate.getMonth() + 1;
+        const todayYY = todayDate.getFullYear();
+        const todayHours = todayDate.getHours();
+        const todayMinutes = todayDate.getMinutes();
+        const todaySec = todayDate.getSeconds();
+
+        console.log(
+          ` ${todayDD}/${todayMM}/${todayYY} [${todayHours}:${todayMinutes}:${todaySec}] `
+        );
+
+        const Railwaytime = ` ${todayDD}/${todayMM}/${todayYY} [${todayHours}:${todayMinutes}:${todaySec}] `;
+
+        document.getElementById("time").innerText = Railwaytime;
+      }
+
+      //   Time();
+
+      //milliseconds = 1sec = 1000 milliseconds
+
+      setInterval(Time, 1000);
+
+      setInterval(() => {
+        const todayDate = new Date();
+        const todayDD = todayDate.getDate();
+        const todayMM = todayDate.getMonth() + 1;
+        const todayYY = todayDate.getFullYear();
+        const todayHours = todayDate.getHours();
+        const todayMinutes = todayDate.getMinutes();
+        const todaySec = todayDate.getSeconds();
+
+        console.log(
+          ` ${todayDD}/${todayMM}/${todayYY} [${todayHours}:${todayMinutes}:${todaySec}] `
+        );
+
+        const Railwaytime = ` ${todayDD}/${todayMM}/${todayYY} [${todayHours}:${todayMinutes}:${todaySec}] `;
+
+        document.getElementById("time2").innerText = Railwaytime;
+      }, 1000);
+
+      // dom  - document object model
+
+      // setInterval(function,time)
+    </script>
+  </body>
+</html>

@@ -188,3 +188,67 @@ player 2 = 4 Yaahooo You won ! 🎉
 // console.log("Hello" + "      " + a + firstName);
 
 // console.log(`Hello   ${a}      ${firstName}`);
+
+// test;
+
+let player_1, player_2;
+let chances = 3;
+
+player_1 = prompt("Guess a number (Player-1)(1-10) :- ");
+player_2 = prompt.hide("Guess a number (Player-2)(1-10) :- ");
+
+if (player_1 == player_2) {
+  console.log("Yaahooo You won! 🎉");
+} else {
+  chances--;
+
+  if (chances > 0) {
+    console.log(
+      "Better luck next time 🫤. You have " + chances + " chance(s) left."
+    );
+
+    // Provide hint
+    if (player_1 > player_2) {
+      console.log("Hint: Player-1's guess is higher than Player-2's guess.");
+    } else if (player_1 < player_2) {
+      console.log("Hint: Player-1's guess is lower than Player-2's guess.");
+    }
+
+    player_1 = prompt("Guess a number (Player-1)(1-10) :- ");
+    player_2 = prompt.hide("Guess a number (Player-2)(1-10) :- ");
+
+    if (player_1 == player_2) {
+      console.log("Yaahooo You won! 🎉");
+    } else {
+      chances--;
+
+      if (chances > 0) {
+        console.log(
+          "Better luck next time 🫤. You have " + chances + " chance(s) left."
+        );
+
+        // Provide hint
+        if (player_1 > player_2) {
+          console.log(
+            "Hint: Player-1's guess is higher than Player-2's guess."
+          );
+        } else if (player_1 < player_2) {
+          console.log("Hint: Player-1's guess is lower than Player-2's guess.");
+        }
+
+        player_1 = prompt("Guess a number (Player-1)(1-10) :- ");
+        player_2 = prompt.hide("Guess a number (Player-2)(1-10) :- ");
+
+        if (player_1 == player_2) {
+          console.log("Yaahooo You won! 🎉");
+        } else {
+          console.log("Sorry, you ran out of chances! 🫤");
+        }
+      } else {
+        console.log("Sorry, you ran out of chances! 🫤");
+      }
+    }
+  } else {
+    console.log("Sorry, you ran out of chances! 🫤");
+  }
+}
