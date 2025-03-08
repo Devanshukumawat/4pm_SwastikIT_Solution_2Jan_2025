@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <button onclick="Increment()" id="btnD">+</button>
+    <h2 id="output"></h2>
+    <button onclick="Decrement()">-</button>
+
+    <script>
+      let value = 0;
+      document.getElementById("output").innerText = value;
+
+      function Increment() {
+        document.getElementById("output").innerText = value++;
+      }
+
+      function Decrement() {
+        if (value >= 0) {
+          document.getElementById("output").innerText = value--;
+        }
+      }
+    </script>
+  </body>
+</html>

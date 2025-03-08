@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <!-- id- # class - . tag - name -->
+
+    <h1 id="c1">hello class</h1>
+    <h1 class="c2">Lorem, ipsum dolor.</h1>
+    <h2 class="c2">Lorem ipsum dolor sit amet consectetur adipisicing elit.</h2>
+
+    <h1 id="change">Hello class</h1>
+    <button id="btn">Click To Change</button>
+
+    <button id="btn1">Print</button>
+
+    <script>
+      document.querySelector("#btn1").addEventListener("click", () => {
+        window.print();
+      });
+
+      document.querySelector("#btn").addEventListener("click", () => {
+        document.querySelector("#change").innerHTML = "GoodBy class";
+      });
+
+      //querySelector
+      //queryAllSelector
+
+      //   let a = document.querySelector("h1");
+      //   let b = document.querySelectorAll("h1");
+      //   console.log(b);
+
+      //   let a = document.querySelector("#c1");
+      //   let b = document.querySelectorAll(".c2");
+      //   console.log(b);
+    </script>
+  </body>
+</html>
