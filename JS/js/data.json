@@ -1,0 +1,24 @@
+[
+    {
+        "name":"Rahul",
+        "age":45,
+        "studentClass":12,
+        "address":{
+            "city":"Jaipur",
+            "PinCode":"45678"
+        },
+        "skills":["js","react","node"],
+        "isMarried":false
+    },
+    {
+        "name":"aman",
+        "age":35,
+        "studentClass":12,
+        "address":{
+            "city":"Ajmer",
+            "PinCode":"45678"
+        },
+        "skills":["js","react","node"],
+        "isMarried":true
+    }
+]
