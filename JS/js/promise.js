@@ -51,24 +51,49 @@
 //   console.log(err.message);
 // });
 
-new Promise((resolve, reject) => {
-  setTimeout(() => {
-    console.log("Async Task Completed..😍");
+// new Promise((resolve, reject) => {
+//   setTimeout(() => {
+//     console.log("Async Task Completed..😍");
 
-    let task = true;
-    if (task) {
-      resolve({ data: "Hello Guys Welcome Back to SW 🙂" });
-    } else {
-      reject({ Message: "Error..❌" });
-    }
-  }, 1000);
-})
-  .then((res) => {
-    console.log(res);
-  })
-  .catch((error) => {
+//     let task = true;
+//     if (task) {
+//       resolve({ data: "Hello Guys Welcome Back to SW 🙂" });
+//     } else {
+//       reject({ Message: "Error..❌" });
+//     }
+//   }, 1000);
+// })
+//   .then((res) => {
+//     console.log(res);
+//   })
+//   .catch((error) => {
+//     console.log(error);
+//   })
+//   .finally(() => {
+//     console.log("Always Work Finally Block");
+//   });
+
+// fetch("https://dummyjson.com/products")
+//   .then((res) => {
+//     return res.json();
+//   })
+//   .then((data) => {
+//     console.log(data);
+//   })
+//   .catch((error) => {
+//     console.log(error);
+//   });
+
+async function data() {
+  try {
+    const product = await fetch("https://dummyjson.com/products/28");
+    const data = await product.json();
+    console.log(data);
+  } catch (error) {
     console.log(error);
-  })
-  .finally(() => {
-    console.log("Always Work Finally Block");
-  });
+  }
+}
+
+data();
+
+// fetch axios
