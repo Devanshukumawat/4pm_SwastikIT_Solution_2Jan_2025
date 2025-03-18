@@ -1,3 +1,6 @@
+const { a } = require("../js/module/one");
+console.log(a);
+
 // sets -  unique value store
 
 // const mySet = new Set(["a", "b", "c", "c", "a", "b", "devanshu"]);

@@ -149,19 +149,19 @@ unshift() start index - value add
 
 // myNewArray.forEach(add);
 
-const myNewArray = ["Dev", "Text", 6, 8, false];
+// const myNewArray = ["Dev", "Text", 6, 8, false];
 
-const returnNewValue = myNewArray.forEach((value, index) => {
-  return value;
-});
+// const returnNewValue = myNewArray.forEach((value, index) => {
+//   return value;
+// });
 
-console.log(returnValue);
+// console.log(returnValue);
 
-const returnValue = myNewArray.map((value, index) => {
-  return value;
-});
+// const returnValue = myNewArray.map((value, index) => {
+//   return value;
+// });
 
-console.log(returnValue);
+// console.log(returnValue);
 
 // const myArray = [5, 77, 6, 2, 3, 44, 54, 32, 12];
 
@@ -215,3 +215,21 @@ acc = 15 value
 //   let table = num * x;
 //   console.log(table);
 // }
+
+// const myArray = [5, 4, 3, 3, 2, 4, 6, 5, 9, 8, 7, 6, 5];
+
+// Duplicate Array   [5,4,3,2,6,9,8,7]
+
+// const num = new Set([5, 4, 3, 3, 2, 4, 6, 5, 9, 8, 7, 6, 5]);
+// console.log(num);
+
+const myArray = [5, 4, 3, 3, 2, 4, 6, 5, 9, 8, 7, 6, 5];
+
+const duplicate = new Set(myArray);
+
+//Spread - Unpack
+// Rest - pack
+
+const newArray = [...duplicate];
+
+console.log(newArray);
